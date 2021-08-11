@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Exemplo",
+            "price": 5.989
+        },
+        {
+            "id": 13,
+            "name": "Exemplo 2",
+            "price": 4.989
+        },
+        {
+            "id": 13,
+            "name": "Exemplo 221",
+            "price": 4.989
+        }
+    ]   
+}
