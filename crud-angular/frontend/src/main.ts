@@ -1,3 +1,6 @@
+// Porta de entrada do projeto
+// Vai carregar o modulo principal
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -8,5 +11,5 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic().bootstrapModule(AppModule) // Vai carregar por padrão (nesse projeto) o AppModule
   .catch(err => console.error(err));
