@@ -17,6 +17,6 @@ import { HeaderComponent } from './components/template/header/header.component';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent] // Componente qeu será inicializadopara carregar a aplicação
+  bootstrap: [AppComponent] // Componente qeu será inicializado para carregar a aplicação
 })
 export class AppModule { }
