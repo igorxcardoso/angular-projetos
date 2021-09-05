@@ -1,19 +1,39 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Exemplo",
-            "price": 5.989
-        },
-        {
-            "id": 13,
-            "name": "Exemplo 2",
-            "price": 4.989
-        },
-        {
-            "id": 13,
-            "name": "Exemplo 221",
-            "price": 4.989
-        }
-    ]   
+  "products": [
+    {
+      "id": 1,
+      "name": "Exemplo",
+      "price": 5.989
+    },
+    {
+      "id": 13,
+      "name": "Exemplo 2",
+      "price": 4.989
+    },
+    {
+      "id": 13,
+      "name": "Exemplo 221",
+      "price": 4.989
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "iygorsilva22",
+      "email": "iygorsilva@gmail.com",
+      "yearold": 24
+    },
+    {
+      "id": 2,
+      "username": "silvinha66",
+      "email": "silvinha@hotmail.com",
+      "yearold": 26
+    },
+    {
+      "id": "3",
+      "email": "sophiasilva34@gmail.com",
+      "username": "soph",
+      "yearold": "21"
+    }
+  ]
 }
