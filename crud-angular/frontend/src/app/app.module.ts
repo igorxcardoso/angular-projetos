@@ -11,7 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 
-// Importa√ß√£o do Mat
+// ImportaÁ„o do Mat
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
@@ -52,6 +52,6 @@ import { HttpClientModule } from '@angular/common/http';
 		HttpClientModule
 	],
 	providers: [], // Se eu quiser expor um service eu declaro ele aqui em providers
-	bootstrap: [AppComponent] // Componente qeu ser√° inicializado para carregar a aplica√ß√£o
+	bootstrap: [AppComponent] // Componente qeu ser„o inicializado para carregar a aplicaÁ„o
 })
 export class AppModule { }
