@@ -9,7 +9,7 @@ import { HeaderComponent } from './components/template/header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
-import { NavComponent } from './components/template/nav/nav.component'; 
+import { NavComponent } from './components/template/nav/nav.component';
 
 // Importação do Mat
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -23,30 +23,35 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
+
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavComponent,
-    HomeComponent,
-    ProductCrudComponent,
-    RedDirective,
-    ForDirective,
-    ProductCreateComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatCardModule,
-    MatButtonModule,
-    MatSnackBarModule
-  ],
-  providers: [], // Se eu quiser expor um service eu declaro ele aqui em providers
-  bootstrap: [AppComponent] // Componente qeu será inicializado para carregar a aplicação
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		FooterComponent,
+		NavComponent,
+		HomeComponent,
+		ProductCrudComponent,
+		RedDirective,
+		ForDirective,
+		ProductCreateComponent
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		MatToolbarModule,
+		MatSidenavModule,
+		MatListModule,
+		MatCardModule,
+		MatButtonModule,
+		MatSnackBarModule,
+		HttpClientModule
+	],
+	providers: [], // Se eu quiser expor um service eu declaro ele aqui em providers
+	bootstrap: [AppComponent] // Componente qeu será inicializado para carregar a aplicação
 })
 export class AppModule { }
