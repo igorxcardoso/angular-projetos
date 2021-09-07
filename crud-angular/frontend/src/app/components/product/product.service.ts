@@ -26,9 +26,11 @@ export class ProductService {
 		});
 	}
 
-	create(produto: Product): Observable<Product> { // RequisiÃ§Ã£o HTTP do tipo POST ao Backend
+	create(produto: Product): Observable<Product> { // Requisição HTTP do tipo POST ao Backend
 		return this.http.post<Product>(this.URL_BASE, produto);
 	}
+
+	// <> -> Generics
 
 	// Tem que especificar o tipo de retorno <Product> ...
 }

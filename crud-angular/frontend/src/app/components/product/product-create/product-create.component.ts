@@ -1,6 +1,7 @@
 import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Product } from '../product.model';
 
 @Component({
 	selector: 'app-product-create',
@@ -8,6 +9,11 @@ import { Router } from '@angular/router';
 	styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
+
+	produto: Product = {  // O id È opecional
+		name: 'P„o de forma',
+		price: 5.32
+	};
 
 	constructor(private productService: ProductService,
 				private routerCacel: Router) { }
@@ -17,11 +23,14 @@ export class ProductCreateComponent implements OnInit {
 	}
 
 	createProduct(): void {
-		this.productService.showMessage('Produto criado com sucesso!'); // Chama o m√©todo showOnConsole da classe ProductService
+		this.productService.create(this.produto).subscribe(() => {
+			this.productService.showMessage('Produto criado com sucesso!'); // Chama o m√©todo showOnConsole da classe ProductService
+			this.routerCacel.navigate(['/produtos']);
+		});
 	}
 
 	cancel(): void {
-		this.productService.showMessage('Opera√ß√£o cancelada!');
+		this.productService.showMessage('OperaÁ„o cancelada!');
 		this.routerCacel.navigate(['/produtos']);
 	}
 

@@ -1,5 +1,5 @@
 {
-  "products": [
+  "produtos": [
     {
       "id": 1,
       "name": "Exemplo",
@@ -14,9 +14,24 @@
       "id": 13,
       "name": "Exemplo 221",
       "price": 4.989
+    },
+    {
+      "name": "Produto 1",
+      "price": 21.1,
+      "id": 14
+    },
+    {
+      "name": "Produto 2",
+      "price": 58.1,
+      "id": 15
+    },
+    {
+      "name": "Pão de forma",
+      "price": 5.32,
+      "id": 16
     }
   ],
-  "user": [
+  "usuario": [
     {
       "id": 1,
       "username": "iygorsilva22",
