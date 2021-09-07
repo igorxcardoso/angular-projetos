@@ -10,9 +10,9 @@ import { Product } from '../product.model';
 })
 export class ProductCreateComponent implements OnInit {
 
-	produto: Product = {  // O id È opecional
-		name: 'P„o de forma',
-		price: 5.32
+	produto: Product = {  // O id √© opecional
+		nome: '',
+		preco: ''
 	};
 
 	constructor(private productService: ProductService,
@@ -25,12 +25,12 @@ export class ProductCreateComponent implements OnInit {
 	createProduct(): void {
 		this.productService.create(this.produto).subscribe(() => {
 			this.productService.showMessage('Produto criado com sucesso!'); // Chama o m√©todo showOnConsole da classe ProductService
-			this.routerCacel.navigate(['/produtos']);
+			this.routerCacel.navigate(['/produtos']);  // Vai para URL produtos
 		});
 	}
 
 	cancel(): void {
-		this.productService.showMessage('OperaÁ„o cancelada!');
+		this.productService.showMessage('Opera√ß√£o cancelada!');
 		this.routerCacel.navigate(['/produtos']);
 	}
 

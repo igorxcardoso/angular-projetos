@@ -1,34 +1,14 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "name": "Exemplo",
-      "price": 5.989
+      "nome": "Notebook Acer 8 GB",
+      "preco": "1985.32",
+      "id": 1
     },
     {
-      "id": 13,
-      "name": "Exemplo 2",
-      "price": 4.989
-    },
-    {
-      "id": 13,
-      "name": "Exemplo 221",
-      "price": 4.989
-    },
-    {
-      "name": "Produto 1",
-      "price": 21.1,
-      "id": 14
-    },
-    {
-      "name": "Produto 2",
-      "price": 58.1,
-      "id": 15
-    },
-    {
-      "name": "Pão de forma",
-      "price": 5.32,
-      "id": 16
+      "nome": "iPhone X 32GB Petro",
+      "preco": "2500.00",
+      "id": 2
     }
   ],
   "usuario": [
@@ -43,12 +23,6 @@
       "username": "silvinha66",
       "email": "silvinha@hotmail.com",
       "yearold": 26
-    },
-    {
-      "id": "3",
-      "email": "sophiasilva34@gmail.com",
-      "username": "soph",
-      "yearold": "21"
     }
   ]
 }

@@ -1,5 +1,6 @@
 export interface Product {
     id?: number;  // O ? indica que o id não é obrigatório
-    name: string;
-    price: number;
+    nome: string;
+    preco: string;
+    // preco: number;
 }
