@@ -11,7 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 
-// Importação do Mat
+// ImportaÃ§Ã£o do Mat
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
@@ -30,7 +30,10 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
+import { ProductReadComponent } from './components/product/product-read/product-read.component';
+
 @NgModule({
+
 	declarations: [
 		AppComponent,
 		HeaderComponent,
@@ -40,7 +43,8 @@ import { MatInputModule } from '@angular/material/input';
 		ProductCrudComponent,
 		RedDirective,
 		ForDirective,
-		ProductCreateComponent
+		ProductCreateComponent,
+		ProductReadComponent
 	],
 	imports: [
 		BrowserModule,
@@ -58,6 +62,6 @@ import { MatInputModule } from '@angular/material/input';
 		MatInputModule
 	],
 	providers: [], // Se eu quiser expor um service eu declaro ele aqui em providers
-	bootstrap: [AppComponent] // Componente qeu serão inicializado para carregar a aplicação
+	bootstrap: [AppComponent] // Componente qeu serï¿½o inicializado para carregar a aplicaï¿½ï¿½o
 })
 export class AppModule { }
