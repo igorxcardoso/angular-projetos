@@ -6,9 +6,12 @@ import { Directive, OnInit, Input, ViewContainerRef, TemplateRef } from '@angula
 
 // OnInit -> ciclo de vida de inicialização
 // Onchange -> Sempre mudar vai atulizar
-export class ForDirective implements OnInit {
+export class ForDirective implements OnInit { // Implementa o ciclo de vida OnInit
 
 	@Input('meuForEm') numeros: number[];
+	// O input vai pegar o que foi digita no template HTML
+	// Vai pegar o que vem depois da palavra em no template HTML, no caso, uma lista com números
+	
 	// @Input('meuForUsando') texto: string;
 
 	constructor(private container: ViewContainerRef,
