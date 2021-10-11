@@ -20,8 +20,8 @@ export class ProductCrudComponent implements OnInit {
 	}
 
 	// Teste
-	// atributoLegal = "qualquer";
-	// fazerAlgo(): void {
-	// 	console.log("Fazendo algo");
-	// }
+	atributoLegal = "qualquer";
+	fazerAlgo(): void {
+		console.log("Fazendo algo");
+	}
 }
