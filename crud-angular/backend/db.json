@@ -9,6 +9,11 @@
       "nome": "iPhone X 32GB Petro",
       "preco": "2500.00",
       "id": 2
+    },
+    {
+      "nome": "Copo de plático",
+      "preco": "29,9",
+      "id": 3
     }
   ],
   "usuario": [

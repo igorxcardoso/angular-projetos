@@ -10,6 +10,7 @@ export class ProductReadComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

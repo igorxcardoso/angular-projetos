@@ -8,20 +8,20 @@ import { Router } from '@angular/router';
 })
 export class ProductCrudComponent implements OnInit {
 
-	// Vai injetar o trabuto do tipo Router automaticamente
-	constructor(private router: Router) { }
+	// Vai injetar o a tributo do tipo Router automaticamente
+	constructor(private myRouter: Router) { }
 
 	ngOnInit(): void {
 	}
 
 	navigateToProductCreate(): void {
 		// Quando clicar no botão, vai navegar para um rota espcífica.
-		this.router.navigate(['/produtos/criar']);
+		this.myRouter.navigate(['/produtos/criar']);
 	}
 
 	// Teste
-	atributoLegal = "qualquer";
-	fazerAlgo(): void {
-		console.log("Fazendo algo");
-	}
+	// atributoLegal = "qualquer";
+	// fazerAlgo(): void {
+	// 	console.log("Fazendo algo");
+	// }
 }

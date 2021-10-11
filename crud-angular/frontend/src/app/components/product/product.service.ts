@@ -15,6 +15,8 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 	private URL_BASE: string = "http://localhost:3001/produtos";
+	private URL_BASE_GET: string = "http://localhost:3001/produtos";
+
 	constructor(private snackBar: MatSnackBar,
 				private http: HttpClient) { }
 
@@ -26,11 +28,16 @@ export class ProductService {
 		});
 	}
 
-	create(produto: Product): Observable<Product> { // Requisi��o HTTP do tipo POST ao Backend
+	create(produto: Product): Observable<Product> { // Requisição HTTP do tipo POST ao Backend
 		return this.http.post<Product>(this.URL_BASE, produto);
 	}
 
-	// <> -> Generics
+	// Observable do tip lista de produtos
+	read(): Observable<Product[]> {
+		return this.http.get<Product[]>(this.URL_BASE_GET)
+	}
+
+	// <Tipo> -> Notação Generics
 
 	// Tem que especificar o tipo de retorno <Product> ...
 }
