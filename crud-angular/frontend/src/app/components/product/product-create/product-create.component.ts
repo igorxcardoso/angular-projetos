@@ -10,7 +10,7 @@ import { Product } from '../product.model';
 })
 export class ProductCreateComponent implements OnInit {
 
-	produto: Product = {  // O id é opecional
+	produto: Product = {  // O id é opecional, foi definido no model
 		nome: '',
 		preco: ''
 	};
