@@ -21,18 +21,18 @@ export class ProductService {
 				private http: HttpClient) { }
 
 	showMessage(msg: string): void {
-		this.snackBar.open(msg, 'X', { // Esse 'x' é action que é indicação para fechar a notificação. Configurações
+		this.snackBar.open(msg, 'X', { // Esse 'X' é action que é indicação para fechar a notificação.
 			duration: 3000,
 			horizontalPosition: "right",
 			verticalPosition: "top"
 		});
 	}
-
-	create(produto: Product): Observable<Product> { // Requisição HTTP do tipo POST ao Backend
+	// Observable do tipo Product. Responsável por guardar os produtos. Requisição HTTP do tipo POST ao Backend.
+	create(produto: Product): Observable<Product> { 
 		return this.http.post<Product>(this.URL_BASE, produto);
 	}
 
-	// Observable do tip lista de produtos
+	// Observable do tip lista de produtos. Responsável por ler os produtos back. Requisição HTTP do tipo GET ao Backend.
 	read(): Observable<Product[]> {
 		return this.http.get<Product[]>(this.URL_BASE_GET)
 	}

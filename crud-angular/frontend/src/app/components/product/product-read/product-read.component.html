@@ -1,1 +1,6 @@
-<p>product-read works!</p>
+<ul>
+    <!-- O *ngFor é uma diretiva estrutural  -->
+    <li *ngFor="let product of products"> 
+        Id: {{ product.id }} ### Nome: {{ product.name }} ### Preço:{{ product.price }}
+    </li>
+</ul>
