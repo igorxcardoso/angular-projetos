@@ -62,6 +62,6 @@ import { ProductReadComponent } from './components/product/product-read/product-
 		MatInputModule
 	],
 	providers: [], // Se eu quiser expor um service eu declaro ele aqui em providers
-	bootstrap: [AppComponent] // Componente qeu ser�o inicializado para carregar a aplica��o
+	bootstrap: [AppComponent] // Componente qeu serão inicializado para carregar a aplicação
 })
 export class AppModule { }
