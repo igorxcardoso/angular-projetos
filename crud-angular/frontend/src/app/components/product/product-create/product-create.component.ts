@@ -16,28 +16,26 @@ export class ProductCreateComponent implements OnInit {
 	};
 
 	constructor(private productService: ProductService,
-				private routerCacel: Router) { }
+				private myRouter: Router) { }
 
 	ngOnInit(): void {
-		
+	
 	}
 
 	createProduct(): void {
 		// Verifica se o usuário colocou ',' ao invés de '.' e substitui caso o retorno seja diferente de -1
 		if(this.produto.price.indexOf(',') !== -1) {
-			this.produto.price = this.produto.price.replace(',', '.') // Substitui ',' por '.'
-		}else {
-			this.productService.create(this.produto).subscribe(() => {
-				this.productService.showMessage('Produto criado com sucesso!'); // Chama o método showOnConsole da classe ProductService
-				this.routerCacel.navigate(['/produtos']);  // Vai para URL produtos
-			});
+			this.produto.price = this.produto.price.replace(',', '.'); // Substitui ',' por '.'
 		}
+
+		this.productService.create(this.produto).subscribe(() => {
+			this.productService.showMessage('Produto criado com sucesso!'); // Chama o método showOnConsole da classe ProductService
+			this.myRouter.navigate(['/produtos']);  // Vai para URL produtos
+		});	
 	}
 
 	cancel(): void {
 		this.productService.showMessage('Operação cancelada!');
-		this.routerCacel.navigate(['/produtos']);
+		this.myRouter.navigate(['/produtos']);
 	}
-
-
 }

@@ -1,12 +1,12 @@
 {
   "produtos": [
     {
-      "name": "Notebook Acer 8 GB",
+      "name": "Notebook Acer 16 GB",
       "price": "1985.32",
       "id": 1
     },
     {
-      "name": "iPhone X 32GB Petro",
+      "name": "iPhone 13 64GB Petro",
       "price": "2500.00",
       "id": 2
     },
@@ -17,7 +17,7 @@
     },
     {
       "name": "PC quebrado",
-      "price": "10000.00",
+      "price": "552.91",
       "id": 4
     },
     {
@@ -31,14 +31,24 @@
       "id": 6
     },
     {
-      "name": "Meia Branca",
+      "name": "Meia Branca Par",
       "price": "2.99",
       "id": 7
     },
     {
       "name": "Cadeira game",
-      "price": "1039.78",
+      "price": "10.0",
       "id": 8
+    },
+    {
+      "name": "Blusa Nike SB",
+      "price": "321.88",
+      "id": 9
+    },
+    {
+      "name": "Mochila Nike 10 L",
+      "price": "542.98",
+      "id": 10
     }
   ],
   "usuario": [

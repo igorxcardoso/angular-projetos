@@ -39,7 +39,7 @@ export class ProductService {
 		return this.http.get<Product[]>(this.URL_GET);
 	}
 
-	readByid(id: string): Observable<Product> {
+	readByid(id: any): Observable<Product> { ///Mudei para any o tipo de id, antes era string
 		const url = `${this.URL_GET}/${id}`;
 		return this.http.get<Product>(url);
 	}
