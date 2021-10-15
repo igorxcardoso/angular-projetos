@@ -38,7 +38,8 @@ import { MatSortModule } from '@angular/material/sort';
 
 // Para localidade
 import  localePt  from '@angular/common/locales/pt'
-import { registerLocaleData } from '@angular/common'
+import { registerLocaleData } from '@angular/common';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component'
 
 // Registro da localidade
 registerLocaleData(localePt);
@@ -54,7 +55,8 @@ registerLocaleData(localePt);
 		ForDirective,
 		ProductCreateComponent,
 		ProductReadComponent,
-		ProductRead2Component
+		ProductRead2Component,
+  ProductUpdateComponent
 	],
 	imports: [
 		BrowserModule,
