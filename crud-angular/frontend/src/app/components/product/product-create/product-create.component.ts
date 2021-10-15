@@ -23,10 +23,15 @@ export class ProductCreateComponent implements OnInit {
 	}
 
 	createProduct(): void {
-		this.productService.create(this.produto).subscribe(() => {
-			this.productService.showMessage('Produto criado com sucesso!'); // Chama o método showOnConsole da classe ProductService
-			this.routerCacel.navigate(['/produtos']);  // Vai para URL produtos
-		});
+		// Verifica se o usuário colocou ',' ao invés de '.' e substitui caso o retorno seja diferente de -1
+		if(this.produto.price.indexOf(',') !== -1) {
+			this.produto.price = this.produto.price.replace(',', '.') // Substitui ',' por '.'
+		}else {
+			this.productService.create(this.produto).subscribe(() => {
+				this.productService.showMessage('Produto criado com sucesso!'); // Chama o método showOnConsole da classe ProductService
+				this.routerCacel.navigate(['/produtos']);  // Vai para URL produtos
+			});
+		}
 	}
 
 	cancel(): void {

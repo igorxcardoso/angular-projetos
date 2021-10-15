@@ -12,23 +12,33 @@
     },
     {
       "name": "Copo de plático",
-      "price": "29,9",
+      "price": "29.9",
       "id": 3
     },
     {
       "name": "PC quebrado",
-      "price": "10000,00",
+      "price": "10000.00",
       "id": 4
     },
     {
       "name": "Notebook i5 8GB 14'",
-      "price": "1782,99",
+      "price": "1782.99",
       "id": 5
     },
     {
       "name": "CD antigo (Não funciona)",
       "price": "0.352",
       "id": 6
+    },
+    {
+      "name": "Meia Branca",
+      "price": "2.99",
+      "id": 7
+    },
+    {
+      "name": "Cadeira game",
+      "price": "1039.78",
+      "id": 8
     }
   ],
   "usuario": [
