@@ -14,8 +14,9 @@ import { Observable } from 'rxjs';
 					   // instancia, os valores dos contadores, por exemplo, não muda e será compartilhado
 })
 export class ProductService {
-	private URL_BASE: string = "http://localhost:3001/produtos";
-	private URL_BASE_GET: string = "http://localhost:3001/produtos";
+	// Em um backend de verdade as URL de POST e GET são diferentes 
+	private URL_POST: string = "http://localhost:3001/produtos";
+	private URL_GET: string = "http://localhost:3001/produtos";
 
 	constructor(private snackBar: MatSnackBar,
 				private http: HttpClient) { }
@@ -27,17 +28,29 @@ export class ProductService {
 			verticalPosition: "top"
 		});
 	}
+	
 	// Observable do tipo Product. Responsável por guardar os produtos. Requisição HTTP do tipo POST ao Backend.
 	create(produto: Product): Observable<Product> { 
-		return this.http.post<Product>(this.URL_BASE, produto);
+		return this.http.post<Product>(this.URL_POST, produto);
 	}
 
-	// Observable do tip lista de produtos. Responsável por ler os produtos back. Requisição HTTP do tipo GET ao Backend.
+	// Observable do tip0 lista de Product. Responsável por ler os produtos back. Requisição HTTP do tipo GET ao Backend.
 	read(): Observable<Product[]> {
-		return this.http.get<Product[]>(this.URL_BASE_GET)
+		return this.http.get<Product[]>(this.URL_GET);
 	}
+
+	readByid(id: string): Observable<Product> {
+		const url = `${this.URL_GET}/${id}`;
+		return this.http.get<Product>(url);
+	}
+
+	// Observable do tipo Product. Responsável por atualizar os dados do banco. Requisição HTTP do tipo PUT ao Backend.
+	update(product: Product): Observable<Product> {
+		const url = `${this.URL_GET}/${product.id}`;
+		return this.http.put<Product>(url, product);
+	}
+
 
 	// <Tipo> -> Notação Generics
-
-	// Tem que especificar o tipo de retorno <Product> ...
+	// Tem que especificar o tipo de retorno, que nese caso é <Product>
 }
