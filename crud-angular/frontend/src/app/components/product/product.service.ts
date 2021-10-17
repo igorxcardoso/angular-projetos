@@ -17,6 +17,7 @@ export class ProductService {
 	// Em um backend de verdade as URL de POST e GET são diferentes 
 	private URL_POST: string = "http://localhost:3001/produtos";
 	private URL_GET: string = "http://localhost:3001/produtos";
+	private URL_DELETE: string = "http://localhost:3001/produtos";
 
 	constructor(private snackBar: MatSnackBar,
 				private http: HttpClient) { }
@@ -50,6 +51,10 @@ export class ProductService {
 		return this.http.put<Product>(url, product);
 	}
 
+	delete(id: any): Observable<Product>{
+		const url = `${this.URL_DELETE}/${id}`;
+		return this.http.delete<Product>(url);
+	}
 
 	// <Tipo> -> Notação Generics
 	// Tem que especificar o tipo de retorno, que nese caso é <Product>

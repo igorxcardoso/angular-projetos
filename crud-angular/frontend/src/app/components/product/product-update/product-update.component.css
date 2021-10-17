@@ -1,6 +1,7 @@
 form {
     display: flex;
     flex-direction: column; /* Vai deixar um debaixo do outro */
+    margin-top: 20px;
 }
 
 button {
