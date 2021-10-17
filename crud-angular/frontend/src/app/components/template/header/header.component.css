@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+    color: #333;
 }
 
 .cabecalho .logo {  /*Somente quem tem a classe .cabecalho e a clase .logo vai recer isso*/
